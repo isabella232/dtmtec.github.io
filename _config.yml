@@ -31,13 +31,13 @@ social:
   - icon:	github
     url:	https://github.com/DTMtec
     desc:	Fork me
-    share_url:
-    share_title:
-    share_link:
 
   - icon:	facebook
     url:	https://facebook.com/DTMtec
     desc:	Fork me
-    share_url:
-    share_title:
-    share_link:
+
+authors:
+  luis.vasconcellos:
+    name: Luis Vasconcellos
+    signature: developer. vim and tmux enthusiast.
+    description: Gosto de postar sobre tal, tal, tal e tal.

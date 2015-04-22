@@ -39,9 +39,9 @@
             <h5 class="index-headline featured"></h5>
             <section class="author">
               <div class="author-image" style="background-image: url(/assets/images/authors/{{page.author}}.jpg)">Blog Logo</div>
-              <h4>{{ site.author }}</h4>
-              <p class="bio">{{site.description}}</p>
-              <p class="bio"><a href="http://twitter.com/vasconcelloslf">Siga-me</a> no twitter para saber mais sobre <span class="subject">{{page.subject}}</span></p>
+              <h4>{{ site.authors[page.author].name }}</h4>
+              <p class="bio">{{ site.authors[page.author].signature   }}</p>
+              <p class="bio">{{ site.authors[page.author].description }}</p>
             </section>
           </div>
           {{/post}}
