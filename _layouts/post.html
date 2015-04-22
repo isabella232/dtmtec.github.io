@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  {% include stylesheets.html %}
+
+  <body itemscope itemtype="http://schema.org/Article">
+    <div class="not-blank">
+      <a href="http://blog.dtmtec.com.br" class="logo-readium">
+        <span class="logo" style="background-image: url(/assets/images/dtm.png)"></span>
+      </a>
+    </div>
+
+    <main class="content" role="main">
+      <article class="not-index post">
+        {% if page.image %}
+        <div class="article-image">
+          <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
+          </div>
+          <div class="post-meta">
+            <h1 class="post-title">{{ page.title }}</h1>
+          </div>
+        </div>
+        {% else %}
+        <div class="noarticleimage">
+          <div class="post-meta">
+            <h1 class="post-title">{{ page.title }}</h1>
+          </div>
+        </div>
+        <br>
+        {% endif %}
+        <section class="post-content">
+          <div class="post-reading">
+            <span class="post-reading-time"></span> read
+          </div>
+          <a name="topofpage"></a>
+          {{content}}
+        </section>
+        <div class="bottom-teaser cf">
+          <div class="isLeft">
+            <h5 class="index-headline featured"></h5>
+            <section class="author">
+              <div class="author-image" style="background-image: url(/assets/images/authors/{{page.author}}.jpg)">Blog Logo</div>
+              <h4>{{ site.author }}</h4>
+              <p class="bio">{{site.description}}</p>
+              <p class="bio"><a href="http://twitter.com/vasconcelloslf">Siga-me</a> no twitter para saber mais sobre <span class="subject">{{page.subject}}</span></p>
+            </section>
+          </div>
+          {{/post}}
+        </div>
+      </article>
+      <div id="disqus_thread"></div>
+      <br/>
+    </main>
+
+    <div class="bottom-closer">
+      <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover }})"{% endif %}>
+      </div>
+      <div class="inner">
+        <h1 class="blog-title">{{ site.title }}</h1>
+        <h2 class="blog-description">{{ site.description }}</h2>
+        <a href="/" class="btn">Voltar</a>
+      </div>
+    </div>
+
+    {% include javascripts.html %}
+  </body>
+</html>
