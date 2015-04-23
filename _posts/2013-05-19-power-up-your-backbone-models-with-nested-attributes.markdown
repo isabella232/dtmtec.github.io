@@ -3,7 +3,8 @@ layout: post
 title: "Power up your Backbone models with Nested Attributes"
 date: 2013-05-19 13:23
 comments: true
-author: Vicente Mundim
+author: vicente.mundim
+read_time: 5 min
 categories:
 - JavaScript
 - Backbone
@@ -12,12 +13,13 @@ categories:
 
 So you've been using Backbone and Rails for some application, and you want your Backbone models to have some relationships, as well as the Rails ones do. Bare Backbone models have no knowledge about relationships, they treat them as embedded objects and this means that you can't listen for changes in an embedded model, or link these embedded models to specific views.
 
+<!-- more -->
+
 There are some [plugins](https://github.com/documentcloud/backbone/wiki/Extensions%2C-Plugins%2C-Resources#relations) that can help you with that, but none of them support Rails nested attributes feature yet. For instance, deleted models in a `1-N` relationship will not be tracked, thus they will not be destroyed in the Rails backend.
 
 Here comes [Backbone.NestedAttributes](https://github.com/dtmconsultoria/backbone-nested-attributes). It provides you with `1-1` and `1-N` relations support, as well as Rails-like nested attributes.
-<!-- more -->
 
-## How can I use it?
+## How can I use it? ##
 
 Okay, so now you have followed the instructions on the [README](https://github.com/dtmconsultoria/backbone-nested-attributes/blob/master/README.md#installation), installing the gem and adding the require in the `application.js`. What now?
 

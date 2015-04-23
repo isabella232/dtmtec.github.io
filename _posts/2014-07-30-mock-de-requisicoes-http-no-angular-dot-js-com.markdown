@@ -2,8 +2,9 @@
 layout: post
 title: "Mock de requisições HTTP no Angular.js"
 date: 2014-07-30 01:18
-author: Carlos Figueiredo
+author: carlos.figueiredo
 comments: true
+read_time: 4 min
 categories:
 - Angular.js
 - UnitTest
@@ -12,14 +13,14 @@ categories:
 
 Angular.js se tornou um framework MVC javascript muito popular. E existem muitos artigos sobre suas facilidades, advindas de seus controllers, suas diretivas, services e factories. Porém pouco se fala em relação a testes unitários para aplicações Angular.js, e isso que pretendo mudar com este artigo. Este artigo vai tratar basicamente de como testar unitariamente seu app feito em Angular.js.
 
+<!-- more -->
 
-### Preparação de ambiente de teste
+## Preparação de ambiente de teste
 
 Para começar, é preciso primeiro montar seu ambiente de testes.
 
 Existem várias formas de se montar o ambiente de teste, uma das mais simples, é fazer o clone do projeto [angular-seed](https://github.com/angular/angular-seed), que já vem com um ambiente pré-configurado, porém ainda possível customizar de acordo com sua necessidade.
 
-<!-- more -->
 
 Na prática, deste projeto, nós precisamos somente dos seguintes arquivos:
 
@@ -57,13 +58,13 @@ describe("MyAngularTutorial", function() {
 E para nosso primeiro teste, vamos testar se quando dispararmos a funcao getContacts() ela resgata uma lista de contatos e armazena numa variavel do scope. Esta variável só deverá ser definida caso consigamos obter com sucesso um json com a list de contatos do endereço /contacts.
 
 
-### Mock de requisicoes HTTP com $httpBackend
+## Mock de requisicoes HTTP com $httpBackend
 
 Para fazer as requisições, a própria documentação do Angular, mostra como usar o $http no controller, porém para os testes, não poderemos usar este módulo, pois não queremos fazer requisições reais. Para fazer o mock dessas requisições, precisamos usar o módulo $httpBackend.
 
 Este módulo implementa algumas funções para simular requisições GET, POST, PUT, JSONP de duas formas:
 
-#### Função $httpBackend.when("METHOD", path).respond(data)
+### Função ```$httpBackend.when("METHOD", path).respond(data)```
 
 Este é um método que serve para configurar uma resposta do backend quando ocorrer determinada requisição. As requisições não precisam ser feitas, mas é preciso configurar o retorno esperado.
 
@@ -94,7 +95,7 @@ describe("MyAngularTutorial", function() {
 ```
 
 
-#### Função $httpBackend.expect("METHOD", path) - (expectativa de requisição)
+### Função ```$httpBackend.expect("METHOD", path)``` - (expectativa de requisição)
 
 Esta é um método que é usado para estabelecer que é obrigatório que determinada requisição seja feita. Caso a requisição não seja feita, um erro será lançado.
 Este método também permite encadear um .respond(data) para se especificar um retorno, porém não é necessário.
@@ -114,7 +115,7 @@ No nosso exemplo, usamos a expectativa para determinar que esperamos que seja fe
     });
 ```
 
-#### Implementando as funcionalidades
+## Implementando as funcionalidades
 
 Até agora só descrevi como estão os testes. Porém mesmo após terminarmos o código da nossa aplicação, os testes vão falhar, com o erro **Expected undefined to be defined.**
 
@@ -160,7 +161,7 @@ INFO [watcher]: Changed file "/Users/cefigueiredo/dev/tutorials-posts-stuff/test
 Chrome 36.0.1985 (Mac OS X 10.9.2): Executed 1 of 1 SUCCESS (0.342 secs / 0.032 secs)
 ```
 
-#### Verificação de pendencias
+## Verificação de pendencias
 
 Eu intencionamente inseri um bug no nosso código.
 

@@ -12,7 +12,9 @@ categories:
 
 O Test Driven Development - TDD é uma técnica de desenvolvimento de software baseado num ciclo onde o desenvolvedor implementa uma nova funcionalidade começando pelos testes. O TDD foi criado por <a href="http://en.wikipedia.org/wiki/Kent_Beck">Kent Beck</a>, tendo declarado que a técnica encoraja o design de códigos simples e inspira confiança.
 
-Inicialmente é escrito um teste pensando em como uma nova funcionalidade será desenvolvida. Esse teste deve falhar, pois nesse estágio é construído o comportamento da nova implementação. Após a falha do teste, o próximo passo consiste em implementar o código que irá satisfazer o comportamento escrito no teste anterior.<!-- more --> Em seguida o teste é executado novamente, e aí sim ele deverá passar. Após o comportamento de uma funcionalidade ser definido em seu teste, e este ter passado existe a segurança para um próximo passo que é o refactoring do código desenvolvido, limpando repetições de código e quaisquer coisas que possam ser melhoradas, levando aos padrões de códigos desejados.
+<!-- more -->
+
+Inicialmente é escrito um teste pensando em como uma nova funcionalidade será desenvolvida. Esse teste deve falhar, pois nesse estágio é construído o comportamento da nova implementação. Após a falha do teste, o próximo passo consiste em implementar o código que irá satisfazer o comportamento escrito no teste anterior. Em seguida o teste é executado novamente, e aí sim ele deverá passar. Após o comportamento de uma funcionalidade ser definido em seu teste, e este ter passado existe a segurança para um próximo passo que é o refactoring do código desenvolvido, limpando repetições de código e quaisquer coisas que possam ser melhoradas, levando aos padrões de códigos desejados.
 
 Mas por que usar TDD? Existem várias discussões e motivos sobre o uso e o porque do uso da técnica. Dentre eles podemos destacar alguns como:
 

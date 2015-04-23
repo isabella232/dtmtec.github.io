@@ -3,17 +3,22 @@ layout: post
 title: "O elemento section do html5"
 date: 2012-10-24 14:40
 comments: true
-author: Rafael Mahler
+author: rafael.mahler
+read_time: 2 min
 categories:
 - html5
 - section
 - html
 ---
 
-Em algum momento você deve ter se perguntado sobre as situações corretas para utilizar as novas tags de html5. Como e onde utilizar `<header>`, `<nav>`, `<section>`, `<article>`... na sua marcação. De fato, você não precisa reaprender html ou jogar fora seu código antigo, que vai continuar funcionando perfeitamente. Mas você pode aprimorar sua marcação, e na velocidade que julgar adequada. Isso porque o html5 não é um pacote fechado, mas sim um conjunto de novas funcionalidades a serem exploradas e experimentadas.
+Em algum momento você deve ter se perguntado sobre as situações corretas para utilizar as novas tags de html5. Como e onde utilizar ```<header>```, ```<nav>```, ```<section>```, ```<article>``` na sua marcação. De fato, você não precisa reaprender html ou jogar fora seu código antigo, que vai continuar funcionando perfeitamente.
 
-Na verdade, é muito simples entender estes novos elementos semânticos, pois eles se explicam pelo próprio nome que carregam. É fácil entender a que se propõe um `<header>`, e não há mistério algum em como aplicá-lo no seu html.
 <!-- more -->
+
+Você pode aprimorar sua marcação, e na velocidade que julgar adequada. Isso porque o html5 não é um pacote fechado, mas sim um conjunto de novas funcionalidades a serem exploradas e experimentadas.
+
+É muito simples entender estes novos elementos semânticos, pois eles se explicam pelo próprio nome que carregam. É fácil entender a que se propõe um `<header>`, e não há mistério algum em como aplicá-lo no seu html.
+
 Porém a ideia de que, tomando as devidas precauções de compatibilidade dos browsers, poderíamos simplesmente passar a utilizar as novas tags no lugar de divs, não me parece suficiente para a sua correta aplicação no código. Meu ponto envolve o uso do elemento `<section>`, que pode parecer confuso e de difícil discernimento. Pesquisei sobre algumas práticas de uso do `<section>` e notei que, equivocadamente, este elemento tem sido regularmente usado com propósitos de estilização.
 
 Segundo sua <a target="_blank" title="Definição" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/sections.html#the-section-element">definição</a>, *"o elemento `<section>`section representa uma seção genérica de um documento ou aplicação. Uma seção, neste contexto, é um agrupamento de conteúdo, geralmente com um título."*

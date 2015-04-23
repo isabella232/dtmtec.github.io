@@ -1,26 +1,30 @@
 ---
 layout: post
-title: Do que o Rails é feito?
+title: Como o Rails funciona?
 date: 2013-07-17 11:41
 comments: true
+author: luis.vasconcellos
+read_time: 4 min
 categories: rails
 ---
 
-Nesse artigo iremos explorar como o Rails funciona por dentro, explicando do que ele é feito e como ele está organizado. Vamos ver também os motivos que levaram o [Rails Core Team](http://rubyonrails.org/core), a equipe responsável por guiar o seu desenvolvimento, a estruturá-lo da forma como ele está hoje.<!-- more -->
+Nesse artigo iremos explorar como o Rails funciona por dentro, explicando do que ele é feito e como ele está organizado. Vamos ver também os motivos que levaram o [Rails Core Team](http://rubyonrails.org/core), a equipe responsável por guiar o seu desenvolvimento, a estruturá-lo da forma como ele está hoje.
 
-### Os blocos fundamentais ###
+<!-- more -->
+
+## Os blocos fundamentais
 
 O Rails é um framework modular, ou seja, toda a sua estrutura interna é dividida em módulos distintos, cada um com a sua própria responsabilidade. [Atualmente](https://github.com/rails/rails/tree/v4.0.0), os módulos que compõem o Rails são:
 
-* **ActionMailer**
-* **ActionPack**
-* **ActionModel**
-* **ActiveRecord**
-* **ActiveSupport**
+* ActionMailer
+* ActionPack
+* ActionModel
+* ActiveRecord
+* ActiveSupport
 
 Todos esses módulos tem um ponto em comum: Eles organizam a estrutura interna do Rails. Ao abrir o [código atual do Rails](https://gihub.com/rails/rails/tree/v4.0.0), vemos que cada um dos módulos possui seu próprio diretório, o que facilita tanto para dar manuntenção quanto para entender o funcionamento do framework.
 
-### ActiveRecord ###
+## ActiveRecord
 
 O ActiveRecord é um ORM (object-relational mapping), ou seja, um mapeador entre objetos e registros de uma tabela, onde cada classe de modelo possui uma tabela correspondente a ela no banco de dados. Cada objeto sabe como se persistir e após a persistência de um objeto, um novo registro é adicionado na tabela referente a sua classe. Através de métodos de consulta, a classe consegue consultar um ou vários registros de uma tabela e retorná-los como objetos.
 
@@ -32,7 +36,7 @@ O fato do ActiveRecord não precisar de quase nenhuma configuração é graças 
 
 Uma curiosidade é que o criador do Rails comecou a implementar o ActiveRecord incialmente em PHP, mas as partes mais dinâmicas da interface exigiam muita metaprogaramação, o que fez a sua atenção se voltar para o Ruby, já que a linguagem lida com metaprogramação de modo muito simples.
 
-### ActionPack ###
+## ActionPack
 
 O ActionPack é o módulo responsável pelo controle das requisições feitas para a aplicação. Ele é que torna possivel a criação de controllers que definem actions, a criação de rotas que mapeiam uma action a uma URL, além de ser o responsável por gerar a resposta da requisição, renderizando views de diversos formatos diferentes.
 
@@ -44,7 +48,7 @@ O ActionPack por sua vez é formado por diferentes módulos, sendo os três prin
 
 * **ActionView**, que trabalha com a renderização das views através de templates com o formato ERB (embedded ruby)
 
-### ActiveModel   ###
+## ActiveModel
 
 O prinicipal motivo da criação do ActiveModel foi gerar uma interface entre o ActiveRecord e o ActionPack, eliminando o acoplamento do Rails com a camada de persistência escolhida para a aplicação, facilitando assim a integração dela com outros tipos de bancos de dados que por padrão não são suportados pelo ActiveRecord.
 
@@ -52,14 +56,14 @@ Outro bom motivo que levou o ActiveModel a ser criado foi para tirar do AtiveRec
 
 Segue abaixo uma lista dos módulos que são responsabilidade do ActiveModel. Embora não seja o meu objetivo entrar em detalhes sobre eles, o nome de cada um já dá uma idéia do que fazem:
 
-- **ActiveModel::CallBacks**
-- **ActiveModel::Dirty**
-- **ActiveModel::Errors**
-- **ActiveModel::Naming**
-- **ActiveModel::Serialization**
-- **ActiveModel::Validations**
+- ActiveModel::CallBacks
+- ActiveModel::Dirty
+- ActiveModel::Errors
+- ActiveModel::Naming
+- ActiveModel::Serialization
+- ActiveModel::Validations
 
-### ActiveSupport ###
+## ActiveSupport
 
 O ActiveSupport é o módulo que fornece extensões para as classes mais utilizadas no dia-a-dia de um desenvolvedor Rails, como String, Hash, Array, Time, etc... Assim como os outros módulos citados nesse post, o ActiveSupport pode ser utilizado também fora de um projeto Rails, para isso basta incluir nas dependências do projeto a gem activesupport.
 
@@ -144,7 +148,7 @@ Segue abaixo a lista das extensões do ActiveSupport para as principais classes 
 - [Hash#slice](http://guides.rubyonrails.org/active_support_core_extensions.html#slicing)
 - [Hash#extract](http://guides.rubyonrails.org/active_support_core_extensions.html#extracting)
 
-### ActionMailer  ###
+## ActionMailer
 
 O ActionMailer é o módulo responsável pelo serviço de email, possibilitando tanto o envio quanto o recebimento de email da aplicação.
 
@@ -152,7 +156,7 @@ O ActionMailer foi construído ao redor da [mail gem](https://github.com/mikel/m
 
 O ActionMailer foi construído ao redor da [mail gem](https://github.com/mikel/mail), e funciona de modo semalhante ao ActionPack: Você define uma classe mailer que tem a mesma função de um controller, com actions e views que correspondem aos templates de email que se deseja definir.
 
-### Conclusão ###
+## Conclusão
 
 A arquitetura modular do Rails dá ao desenvolvedor o poder de escolha sobre quais partes do Rails a aplicação vai utilizar. Um caso real aonde essa arquitetura é bem aproveitada é uma a aplicação Rails que usa um banco de dados não relacional, como o MongoDB. Nesse caso, a camada de persistência padrão do Rails é trocada, o ActiveRecord é substituido por outra mapeador que saiba lidar com o MongoDB, como o [Mongoid](http://mongoid.org) por exemplo.
 

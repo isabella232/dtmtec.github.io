@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Criando um componente usando Backbone.js"
+title: "Criando um componente com Backbone.js"
 date: 2012-09-11 16:42
 comments: true
 author: Vicente Mundim
+read_time: 26 min
 categories:
 - Backbone
 - Javascript
@@ -11,18 +12,20 @@ categories:
 
 Como vimos no nosso último post, <a href="http://backbonejs.org">Backbone.js</a> nos ajuda a criar <a href="http://en.wikipedia.org/wiki/Rich_Internet_application">interfaces ricas na web</a> usando apenas *JavaScript*. Vamos ver agora um exemplo da criação de um componente de seleção genérico usando **Backbone.js**, junto com o adapter <a href="https://github.com/jeromegn/Backbone.localStorage">Backbone.localStorage</a> para fazer a persistência de dados no próprio cliente.
 
-Essa aplicação poderia ter sido implementada usando apenas HTML e JavaScript, mas na maioria dos casos o que queremos é saber como integrar um componente **Backbone.js** com uma aplicação web comum, como **Rails** ou **Django**. Este tutorial vai descrever algumas técnicas que utilizamos quando queremos criar componentes desse tipo, integrados às nossas aplicações. <!-- more -->
+<!-- more -->
 
-**O componente**
+Essa aplicação poderia ter sido implementada usando apenas HTML e JavaScript, mas na maioria dos casos o que queremos é saber como integrar um componente **Backbone.js** com uma aplicação web comum, como **Rails** ou **Django**. Este tutorial vai descrever algumas técnicas que utilizamos quando queremos criar componentes desse tipo, integrados às nossas aplicações.
+
+## O componente ##
 
 Neste exemplo, vamos implementar uma interface para que, dado um conjunto de filmes, um usuário possa selecionar seus filmes favoritos, manter essa lista persistida mesmo ao recarregar a página. A idéia não é criar uma aplicação completa, com persistência em banco de dados, autenticação, etc, mas mostrar como isso poderia ser feito usando **Backbone.js** e uma pequena camada de **Rails**.
 
-**Setup**
+## Setup ##
 
 Para quem prefere devorar o código, basta clonar o repositório <a href="https://github.com/vicentemundim/multi-select-backbone">https://github.com/vicentemundim/multi-select-backbone</a> e rodar os passos básicos para qualquer aplicação rails: criar um gemset com o <a href="http://rvm.io">RVM</a>, rodar bundle install e por fim os testes com rake jasmine:ci. Por fim, inicie o servidor rails e aponte seu browser para <a href="http://localhost:3000">http://localhost:3000</a>, você deverá ver a aplicação rodando, e poderá adicionar filmes à lista de favoritos, e esta será mantida mesmo após recarregar a página.
 
 
-**Entendendo o código**
+## Entendendo o código ##
 
 O componente que iremos criar precisará ser alimentado com uma lista de filmes. Além disso precisamos que uma página seja renderizada para que o componente possa fazer sua mágica. Isso é bem comum em aplicações que usam o **Backbone.js**, mas como passar esses dados para o componente durante a renderização da página?
 
@@ -70,7 +73,7 @@ Essas *views* são bem parecidas, ambas irão carregar o template, e renderizar 
 
 Por fim, as *views* são configuradas para escutar eventos de clique nos botões de adicionar ou remover, disparando o evento personalizado `multi-select:add` ou `multi-select:remove`. Esses eventos, como vimos anteriormente são escutados pela *view* `MultiSelect` que irá então mover os modelos de uma lista para outra. Ao fazer isso, os modelos irão disparar eventos de `add` e `remove` para as *views*, que irão renderizar suas *collections* novamente, atualizando a tela. Embora a *view* `MultiSelect` conheça e mantenha uma referência direta para as outras duas *views*, estas se comunicam com aquela apenas através de eventos, ou seja, conseguimos desacoplar esses objetos.
 
-**Melhorando o código**
+## Melhorando o código ##
 
 Como vimos, ambas as *views* tem um comportamento semelhante, com pequenas variações. Podemos usar o conceito de herança para melhorar o código e reduzir a redundância. Para isso criaremos uma classe base `BaseContainerView` que irá implementar o método render, assim como carregar o template e escutar aos eventos da *collection*:
 
@@ -82,7 +85,7 @@ E reescrevemos as views assim:
 
 Note que agora herdamos de `BaseContainerView` ao invés de `Backbone.View`, simples assim.
 
-**Conclusão**
+## Conclusão ##
 
 Com este exemplo mostramos como criar um componente genérico usando **Rails** e **Backbone.js**. Usamos um `localStorage` para salvar os filmes favoritos, mas poderíamos facilmente ter criado uma API com **Rails** e feito a intergração. Do ponto de vista do código do componente, apenas mudaríamos a *collection* `FavoriteMovies` para não utilizar mais o `localStorage`, além de especificar a *URL* do serviço. Todo o resto permaneceria inalterado. Conseguimos, através de uma <a href="http://en.wikipedia.org/wiki/Event-driven_programming">arquitetura orientada a eventos</a> diminuir o acoplamento entre os componentes e com isso torná-los mais genéricos e reutilizáveis.
 

@@ -1,24 +1,25 @@
 ---
 layout: post
-title: "Utilizando a API do Maxipago com Ruby on Rails"
+title: "Utilizando a API do Maxipago no Rails"
 date: 2013-09-19 15:36
-author: João Mello
+author: joao.mello
 comments: true
+read_time: 4 min
 categories:
 - Rails
 - Maxipago
 - Pagamento Recorrente
 ---
 
-Maxipago é um gateway de pagamentos com suporte à pagamentos via cartões de crédito, boleto bancário, além de pagamentos recorrentes.
+Maxipago é um gateway de pagamentos com suporte à pagamentos via cartões de crédito, boleto bancário, além de pagamentos recorrentes. Para comunição de dados do Maxipago com sua aplicação são utilizados 3 tipos de requisição e para cada uma delas existe uma API específica, são elas:
 
-Para comunição de dados do Maxipago com sua aplicação são utilizados 3 tipos de requisição e para cada uma delas existe uma API específica, são elas:
+<!-- more -->
 
 * Requisição de Cadastro: Efetua operações cadastrais, como salvar um cartão de créditos na base de dados do Maxipago.
 
 * Requisição de Transação: Efetua as operações de pagamento tanto do cartão de crédito e boleto bancário.
 
-* Requisição de consulta: Busca pedidos e transações na base de dados do Maxipago. <!-- more -->
+* Requisição de consulta: Busca pedidos e transações na base de dados do Maxipago.
 
 ## Instalação:
 
@@ -26,23 +27,25 @@ Requisições feitas à API do Maxipago são feitas atraves de XML, porém utili
 
 Adicione ao Gemfile da sua aplicação a seguinte linha:
 
->  gem "maxipago", :git => "git://github.com/bonera/maxipago.git"
+```
+gem "maxipago", :git => "git://github.com/bonera/maxipago.git"
+```
 
 Instalar o inicializador da GEM:
 
-> rails generate maxipago:install
+```
+rails generate maxipago:install
+```
 
-
-Esta gem foi baseada no manual da 'API V1.3' e da API de transação 'V3.1.1.15'. Veja o manual com o histórico de revisões e outras informações:
-
-  (http://www.maxipago.com/docs/maxiPago_API_Ultima.pdf)
-
+Esta gem foi baseada no manual da 'API V1.3' e da API de transação 'V3.1.1.15'. Veja o manual com o histórico de revisões e outras informações: (http://www.maxipago.com/docs/maxiPago_API_Ultima.pdf)
 
 Para realizar uma ação usando a bibioteca maxipago é preciso incluir as credenciais do estabelecimento. Qualquer requisição a API do Maxipago precisa ser autenticada.
 
 O local para incluir essas credenciais bem como dados de teste ficam localizado em:
 
-> config/initializers/maxipago_config.rb
+```
+config/initializers/maxipago_config.rb
+```
 
 Aqui segue um exemplo do seu conteudo:
 
@@ -71,9 +74,10 @@ URL_TEST_RAPI = "https://testapi.maxipago.net/ReportsAPI/servlet/ReportsAPI"
 
 A seguir temos alguns passos comuns à utilização de uma api de pagamento. Instanciando um objeto da classe Client para executar os comandos.
 
-
-> client = Maxipago::Client.new
-> => #<Maxipago::Client:0x007fb1f3d171d8>
+```
+client = Maxipago::Client.new
+=> #<Maxipago::Client:0x007fb1f3d171d8>
+```
 
 ### Requisição de cadastro:
 
@@ -110,7 +114,7 @@ client.execute( command: "add_card_onfile",
                billing_email: "foo.bar@exemplo.com.br")
 ```
 
-### Requisição de transação:
+## Requisição de transação:
 
 Agora que temos um cliente salvo no Maxipago com suas respectivas informações de pagamento, faremos uma transação (pagamento) avulsa para ele.
 
@@ -146,12 +150,12 @@ client.execute( command: 'recurring',
                 charge_total: '45.75')
 ```
 
-### Requisição de consulta:
+## Requisição de consulta:
 
 Agora precisamos acompanhar nossa transação nas operadoras, para isto utilizamos a Api de consulta. As operações disponíveis para consulta são:
 
-* one_transaction_report: resgata os detalhes da transação com o transactionId passado.
-* list_transactions_report: resgata uma lista de transações filtradas com valores passados.
+* ```one_transaction_report```: resgata os detalhes da transação com o transactionId passado.
+* ```list_transactions_report```: resgata uma lista de transações filtradas com valores passados.
 * Até a criação deste post não existia operação de consulta por orderId, foi anunciada esta operação na próxima release da API.
 
 Para consultar uma transação temos os seguintes passos:
@@ -177,5 +181,3 @@ client.execute(command: 'list_transactions_report', period: 'today')
 Neste caso estamos consultando todas as transações do dia de hoje.
 
 Estas são as principais operações da API Maxipago utilizando esta gem. Para mais informações sobre às operações sempre se pode contar com a [Expecificação da API](http://www.maxipago.com/docs/maxiPago_API_Ultima.pdf).
-
-Obrigado!

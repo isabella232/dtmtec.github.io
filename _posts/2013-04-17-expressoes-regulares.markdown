@@ -1,24 +1,24 @@
 ---
 layout: post
-title: "Expressoes Regulares"
+title: "Expressões Regulares"
 date: 2012-10-12 22:29
 comments: true
-author: Luis Vasconcellos
+author: luis.vasconcellos
+read_time: 11 min
 categories:
 - ruby
 - regex
 - expressoes regulares
 ---
 
-**Conceitos**
-
 Expressões regulares são utilizadas para facilitar a manipulação de texto dentro de uma aplicacão. Os exemplos a seguir mostram de maneira bem simples o que as expressões regulares podem fazer:
 
-- A expressão regular DTM pega a primeira ocorrência de DTM em uma string.
-- A expressão regular 21/03/2012 pega a primeira ocorrência dessa data em uma string.
+- A expressão regular ```DTM``` pega a primeira ocorrência de DTM em uma string.
+- A expressão regular ```21/03/2012``` pega a primeira ocorrência dessa data em uma string.
+
+<!-- more -->
 
 Usando expressões regulares também podemos utilizar outros caracteres além de letras e números, como alguns sinais de pontuação que possuem signficados especiais em expressões regulares:
-<!-- more -->
 - O ponto . pega qualquer caracter, independente de ser numero, letra ou sinal de pontuação. Da mesma forma, a expressão regular .. pega os primeiros dois caracteres de uma string. Exemplos:
 
 {% gist 3868559 %}
@@ -45,7 +45,7 @@ Outro recurso das expressões regulares são os sets. Os sets são uteis quando 
 
 A desvantagem de usar sets é que sozinhos eles podem ser tornar trabalhosos no que se refere a quantidade de caracteres que se tem que digitar para pegar strings mais complexas.
 
-**Exemplo Prático**
+## Exemplo Prático ##
 
 Vamos supor que se queira pegar uma string que represente uma placa de carro qualquer no formato "AAA-9999". Ou seja, qualquer string que possua 3 letras maiusculas seguida de 4 numeros e separados por um hifen. Usando-se apenas os sets, a expressão regular seria essa:
 

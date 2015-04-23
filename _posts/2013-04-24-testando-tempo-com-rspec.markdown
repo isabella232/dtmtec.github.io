@@ -3,7 +3,8 @@ layout: post
 title: "Testando Tempo com RSpec"
 date: 2013-04-24 13:35
 comments: true
-author: Luis Vasconcellos
+author: luis.vasconcellos
+read_time: 2 min
 categories:
 - rspec
 - rails
@@ -11,7 +12,11 @@ categories:
 - tdd
 ---
 
-Suponha que você tenha uma clase **Project** com o método **configure_start_date**, cuja responsabilidade é definir o start_date de um project para o tempo atual, como abaixo:
+Nesse artigo vou falar sobre algumas técnicas para manipular a data e a hora atual no RSpec, visando facilitar o teste de métodos que de alguma maneira dependam de datas ou horários específicos.
+
+<!-- more -->
+
+Suponha que você tenha uma clase **Project** com o método ```configure_start_date```, cuja responsabilidade é definir o start_date de um project para o tempo atual, como abaixo:
 
 ```ruby
 class Project < ActiveRecord::Base
@@ -32,7 +37,7 @@ Seria razoável pensar que o teste abaixo seria capaz de testar esse método...
   end
 ```
 
-... Porém, não é o que acontece. O teste acima **falha**. O que acontece é que se passa um pequeno intervalo de tempo entre a chamada do método e o seu teste, e é esse intervalo de tempo que faz ambos os objetos Time serem diferentes, fazendo o teste **falhar**. <!-- more -->
+... Porém, não é o que acontece. O teste acima **falha**. O que acontece é que se passa um pequeno intervalo de tempo entre a chamada do método e o seu teste, e é esse intervalo de tempo que faz ambos os objetos Time serem diferentes, fazendo o teste **falhar**.
 
 Ao me deparar com esse problema eu encontrei duas soluções:
 
@@ -57,7 +62,7 @@ end
 
 ### 2) Usando stub
 
-Utilizando stub, podemos definir que, toda vez que o método now da classe Time seja chamado, ele **irá retornar sempre o mesmo valor**. Isso é feito dentro do método tap porque queremos que o **let!(:now)** receba o valor do nosso now assim que o código do stub termine de ser interpretado:
+Utilizando stub, podemos definir que, toda vez que o método now da classe Time seja chamado, ele **irá retornar sempre o mesmo valor**. Isso é feito dentro do método tap porque queremos que o ```let!(:now)``` receba o valor do nosso now assim que o código do stub termine de ser interpretado:
 
 ```ruby
 require 'spec_helper'

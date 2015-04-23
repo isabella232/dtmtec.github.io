@@ -5,17 +5,14 @@ date: 2012-08-07 10:18
 comments: true
 author: Marcelo Murad
 categories:
+read_time: 1 min
 ---
 
-*"Um grupo pequeno de indivíduos dedicados pode mudar o mundo.*
+Acreditamos que um pequeno grupo de indivíduos dedicados pode mudar o mundo!  Entendemos que mudanças são como redes neurais. Infinitos focos de luminosidade podem afetar cada outra região em cadeia.
 
-*De fato, sempre tem acontecido assim.*
+<!-- more -->
 
-*Margaret Mead, 1901 - 1978"*
-
-Acreditamos que um pequeno grupo de indivíduos dedicados pode mudar o mundo! <!-- more -->
-
-Entendemos que mudanças são como redes neurais. Infinitos focos de luminosidade podem afetar cada outra região em cadeia.
+> "Um grupo pequeno de indivíduos dedicados pode mudar o mundo. De fato, sempre tem acontecido assim." Margaret Mead, 1901 - 1978
 
 Por isso, decidimos fortalecer nosso próprio foco. Mostramos que o mercado de TI, mais precisamente desenvolvimento de software, pode ser desenvolvido de outro prisma.
 
@@ -25,14 +22,10 @@ Somos uma empresa jovem que favorece a troca de conhecimento. Formada por profis
 
 Desenvolvemos software de forma ágil e sabemos lidar com as necessidades de cada cliente. Aceleramos o desenvolvimento de software e somos especialistas em integrações de sistemas.
 
-Nosso processo é baseado em práticas ágeis e conceitos lean.
-
-**Entedemos as necessidades de nossos clientes, prototipamos, evoluímos e entregamos software funcionando...**
+Nosso processo é baseado em práticas ágeis e conceitos lean. **Entedemos as necessidades de nossos clientes, prototipamos, evoluímos e entregamos software funcionando...**
 
 **A cada 2 semanas!**
 
 Vamos além da aplicação conceito! Temos know-how no desenvolvimento, em cada etapa necessária. Desde a concepção, passando pelo desenvolvimento de testes automatizados. Até a utilização da aplicação em produção.
 
-Comprovamos nossa experiência com o êxito em cada aplicação.
-
-Com isso comprovamos, ao menos em seu contexto, que um grupo de indivíduos dedicados pode mudar o mundo.
+Comprovamos nossa experiência com o êxito em cada aplicação. Com isso comprovamos, ao menos em seu contexto, que um grupo de indivíduos dedicados pode mudar o mundo.

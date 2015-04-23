@@ -3,6 +3,8 @@ layout: post
 title: "Review do evento Lightning Developer Week no Rio de Janeiro"
 date: 2015-03-19 14:58
 comments: true
+author: rafael.mahler
+read_time: 1 min
 categories:
 - ligthning
 - salesforce
@@ -10,9 +12,10 @@ categories:
 - crm
 ---
 
-*No dia 12 de março de 2015, o Rio de Janeiro marcou sua participação no evento Lightning Developer Week da Salesforce.*
-
 Lightning é um lançamento inovador da plataforma Salesforce1 que permite a criação de aplicativos de forma fácil e rápida por desenvolvedores e analista de negócios.
+
+>
+No dia 12 de março de 2015, o Rio de Janeiro marcou sua participação no evento Lightning Developer Week da Salesforce.
 
 <!-- more -->
 

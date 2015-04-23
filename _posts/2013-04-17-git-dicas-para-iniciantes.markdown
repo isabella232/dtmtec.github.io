@@ -3,15 +3,17 @@ layout: post
 title: "Git: Dicas para iniciantes"
 date: 2012-12-06 09:13
 comments: true
-author: João Mello
+author: joao.mello
+read_time: 7 min
 categories:
 - git
 ---
 
-O objetivo deste post é ajudar quem, como eu, está (muito) longe de ser um expert em git e já tropeçou em algum git rebase, erro de digitação na  descrição do commit, ou coisas do gênero.
+O objetivo deste post é ajudar quem, como eu, está (muito) longe de ser um expert em git e já tropeçou em algum rebase, erro de digitação na descrição do commit, ou coisas do gênero.
+
+<!-- more -->
 
 Primeiramente é muito importante você se identificar no projeto, então, não se acanhe:
-<!-- more -->
 
 {% gist 4217835 arquivo1 %}
 

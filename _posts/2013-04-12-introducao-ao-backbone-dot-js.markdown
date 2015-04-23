@@ -4,22 +4,23 @@ title: "Introdução ao Backbone.js"
 date: 2012-08-28 13:30
 comments: true
 author: Felipe Mesquita
+read_time: 14 min
 categories:
 - Backbone
 - Javascript
 ---
 
-**O que é Backbone.js?**
-
 Backbone.js é um framework Javascript que facilita a manipulação de dados no front end de uma aplicação web, separando a visualização da manipulação dos dados. Para isso, fornece componentes para uma estrutura MVC, são eles: Model, View e Collection.
 
-**Configurando um projeto para utilizar Backbone.js**
+<!-- more -->
 
-A única dependência do Backbone.js é a biblioteca <a href="http://underscorejs.org/">Underscore</a>. Para uma simples utilização do framework, basta utilizar a biblioteca dentro do seu HTML. <!-- more -->
+## Configurando um projeto com Backbone.js ##
+
+A única dependência do Backbone.js é a biblioteca <a href="http://underscorejs.org/">Underscore</a>. Para uma simples utilização do framework, basta utilizar a biblioteca dentro do seu HTML.
 
 {% gist 3489262 %}
 
-**Backbone.Model**
+## Backbone.Model ##
 
 Modelos são componentes que possuem uma estrutura para manipulação de dados.
 
@@ -35,7 +36,7 @@ Podemos definir valores padrão para os atributos dos modelos, além de poder ma
 
 {% gist 3489313 %}
 
-**Backbone.View**
+## Backbone.View ##
 
 O componente View é utilizado para organizar a lógica de interface.
 

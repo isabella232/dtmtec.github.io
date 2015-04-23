@@ -3,6 +3,7 @@ layout: post
 title: "O acesso a dados por si só não leva necessariamente a melhores decisões"
 date: 2015-04-09 17:26
 comments: true
+author: rafael.mahler
 categories:
 - bi
 - business intelligence
@@ -10,9 +11,12 @@ categories:
 - gestão
 ---
 
-Podemos testemunhar o impacto de decisões ruins apesar dos dados disponíveis. O desastre da crise do subprime, que em parte contribuiu para a desaceleração da economia mundial no final dos anos 2000, é um exemplo elucidativo. As instituições de crédito dos EUA (que concediam empréstimos hipotecários) tinham acesso a décadas de dados sobre os hábitos de empréstimo e reembolso. Elas haviam investido muito em sistemas de relatórios no velho estilo de Business Intelligence. Os KPIs de receita eram bons. Bastava manter o índice “fazer mais dinheiro” elevado. Evidentemente, só porque os dados são disponibilizados, não significa que ele está sendo usado de forma ativa ou eficaz.
+Podemos testemunhar o impacto de decisões ruins apesar dos dados disponíveis. O desastre da crise do subprime, que em parte contribuiu para a desaceleração da economia mundial no final dos anos 2000, é um exemplo elucidativo.
 
 <!-- more -->
+
+As instituições de crédito dos EUA (que concediam empréstimos hipotecários) tinham acesso a décadas de dados sobre os hábitos de empréstimo e reembolso. Elas haviam investido muito em sistemas de relatórios no velho estilo de Business Intelligence. Os KPIs de receita eram bons. Bastava manter o índice “fazer mais dinheiro” elevado. Evidentemente, só porque os dados são disponibilizados, não significa que ele está sendo usado de forma ativa ou eficaz.
+
 
 Neste tipo de situação, parece que os seres humanos são propensos a uma forma de cegueira por falta de atenção e deixam de considerar ou mesmo perceber informações que estão fora do seu foco atual. Nem mesmo o melhor software de Business Discovery seria capaz de superar essa falha de percepção. Porém, ao dar às pessoas a chance de flexibilizar facilmente suas visões sobre os dados e navegar através deles, estas barreiras de percepção podem ser quebradas. Mas para fazer as perguntas certas e obter melhores tomadas de decisão, é preciso repetidas imersões nos dados. Só então será possível adquirir a capacidade de questionar medidas aceitas e abandonar preconceitos perigosos.
 

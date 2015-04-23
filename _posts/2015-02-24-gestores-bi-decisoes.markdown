@@ -3,17 +3,21 @@ layout: post
 title: "Apenas gestores precisam de BI para tomar decisões?"
 date: 2015-02-24 15:20
 comments: true
+read_time: 2 min
+author: rafael.mahler
 categories:
 - bi
 - business discovery
 - gestão
 ---
 
-*A ideia de que um pequeno grupo dentro das empresas é responsável pelas tomadas de decisão já não é mais válida.*
-
 Nos últimos anos, a tecnologia de Business Intelligence deu um salto com softwares mais amigáveis, relatórios interativos e dados exploráveis a partir de várias fontes. É o que chamamos hoje de Business Discovery. Apesar disso, a maioria das organizações não acompanhou essa evolução. É comum que ideias ultrapassadas interfiram na abordagem das empresas em relação a BI. Essas ideias acabam limitando possibilidades e restringindo o potencial das ferramentas de Business Discovery.
 
 <!-- more -->
+
+>
+A ideia de que um pequeno grupo dentro das empresas é responsável pelas tomadas de decisão já não é mais válida.
+
 
 Assim que as empresas passaram a ter “um computador em cada mesa”, suas tomadas de decisão sofreram uma transição. Aquela ideia de que apenas os gestores decidem, passou a não ser mais válida. Na verdade, as decisões estão distribuídas pelos diversos níveis de uma empresa. Essas micro decisões são tão importantes quanto as estratégicas. Muitas vezes, são decisões operacionais, que impactam diretamente nas atividades diárias da empresa, estando mais perto dos clientes, fornecedores e parceiros.
 

@@ -3,15 +3,20 @@ layout: post
 title: "Closures na linguagem Ruby"
 date: 2012-11-21 12:05
 comments: true
-author: Julian Gutierrez
+author: julian.gutierrez
+read_time: 12 min
 categories:
 - ruby
 - closures
 ---
 
-Este artigo tem como objetivo estudar o funcionamento de closures na linguagem Ruby. O conceito de closure, elaborado na década de 60 define funções que estão associadas ao contexto no qual foram declaradas, conhecendo suas variáveis. Além disso, tais funções podem ser passadas integralmente como argumentos, retornadas de outra função ou atribuídas à variáveis, sem que sejam executadas. Quando uma linguagem permite essa abordagem flexível de funções, diz-se que trata funções como first-class citizens. No Ruby, é possível realizar tais operações através de blocos, Procs e lambdas.
+Este artigo tem como objetivo estudar o funcionamento de closures na linguagem Ruby. O conceito de closure, elaborado na década de 60 define funções que estão associadas ao contexto no qual foram declaradas, conhecendo suas variáveis.
+
 <!-- more -->
-Blocos:
+
+Além disso, tais funções podem ser passadas integralmente como argumentos, retornadas de outra função ou atribuídas à variáveis, sem que sejam executadas. Quando uma linguagem permite essa abordagem flexível de funções, diz-se que trata funções como first-class citizens. No Ruby, é possível realizar tais operações através de blocos, Procs e lambdas.
+
+## Blocos ##
 
 Qualquer método em Ruby pode receber um bloco em sua chamada. Um bloco pode ser declarado envolvendo um trecho de código com chaves ou com um bloco do..end. Esse techo de código poderá executado através da chamada yield, no método que o bloco fora passado.
 
@@ -23,13 +28,13 @@ Um bloco pode ser utilizado para implementar uma closure? Vejamos esse exemplo:
 
 Note que o valor de context dentro do bloco é o que foi definido fora do método, independente se o método redefiniu a variável. Com isso verifica-se a característica do bloco de trazer consigo todo o ambiente (variáveis) dentro do qual foi declarado, servindo como uma jaula dentro do ambiente dentro do qual foi executado.
 
-Procs:
+## Procs ##
 
 Entretanto, isso não define rigorosamente uma closure, porque o bloco define apenas uma função anônima, sendo que ainda não é possível guardar sua definição numa variável por exemplo. É para isso que o Ruby define o objeto Proc, que permite ao desenvolvedor de fato trabalhar as funções como first class citizens. A execução de um objeto Proc pode ser disparada através do método call.
 
 {% gist 4125675 %}
 
-Neste exemplo, é mais evidente que my_proc não poderia assumir o valor de context que foi definido dentro do método, pois trata-se apenas de um objeto que desconhece o contexto em que está inserido. No entanto, por se tratar de uma closure, a variável context foi referenciada no momento da declaração de my_proc, estando sempre visível dentro do Proc.
+Neste exemplo, é mais evidente que ```my_proc``` não poderia assumir o valor de context que foi definido dentro do método, pois trata-se apenas de um objeto que desconhece o contexto em que está inserido. No entanto, por se tratar de uma closure, a variável context foi referenciada no momento da declaração de ```my_proc```, estando sempre visível dentro do Proc.
 
 É preciso enfatizar que apesar de serem facilmente confundidos um bloco não é um Proc. Um Proc é um objeto (por isso é escrito com letra maiúscula), e um bloco, à despeito da máxima que tudo é objeto no Ruby, não é!
 
@@ -43,7 +48,7 @@ Note que a variável context é sobrescrita. Você poderá passar quantas variá
 
 {% gist 4125954 %}
 
-Lambdas:
+## Lambdas ##
 
 O código do Proc é executado normalmente. Caso você queira garantir que o número de variáveis passadas seja igual ao que foi definido, existe um Proc que executa essa verificação e lança uma exceção de número de argumento caso seja encontrada a disparidade. Essa Proc pode ser criado através da chamada lambda.
 
