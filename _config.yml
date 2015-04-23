@@ -4,14 +4,12 @@ gems:
   - jemoji
 
 title: "Simplifying Ideas"
-description: >
-  DTM
 
 email: email@dtmtec.com.br
 logo: "/assets/images/dtm.png"
 cover: "/assets/images/cover.jpg"
 
-paginate:	5
+paginate:	50
 
 name: 'DTM'
 author: 'DTM'
