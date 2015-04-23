@@ -37,5 +37,26 @@ social:
 authors:
   luis.vasconcellos:
     name: Luis Vasconcellos
+    twitter: http://twitter.com/vasconcelloslf
     signature: developer. vim and tmux enthusiast.
     description: Gosto de postar sobre tal, tal, tal e tal.
+  marcelo.murad:
+    name: Marcelo Murad
+  rafael.mahler:
+    name: Rafael Mahler
+  otavio.cardoso:
+    name: Otavio Cardoso
+  felipe.mesquita:
+    name: Felipe Mesquita
+  gustavo.kloh:
+    name: Gustavo Kloh
+  vicente.mundim:
+    name: Vicente Mundim
+  joao.mello:
+    name: João Mello
+  carlos.figueiredo:
+    name: Carlos Figueiredo
+  tomas.lima:
+    name: Tomas Lima
+  valeria.parajara:
+    name: Valéria Parajara

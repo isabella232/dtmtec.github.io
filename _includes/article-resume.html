@@ -1,10 +1,19 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+
   <div class="article-item">
     <header class="post-header">
       <h2 class="post-title" itemprop="name">
         <a href="{{ post.url }}" itemprop="url">{{ post.title }}</a>
       </h2>
     </header>
+
+    <div class="post-meta top">
+      por
+      <a href="{{ site.authors[post.author].twitter}}">
+        {{ site.authors[post.author].name }}
+      </a>
+    </div>
+
     <section class="post-excerpt" itemprop="description">
       <p>
       {% if post.content contains "<!-- more -->" %}
@@ -15,11 +24,11 @@
       </p>
     </section>
 
-    <div class="post-meta">
+    <div class="post-meta bottom">
       <span>
         <a href="{{ post.url }}">Continue lendo</a>
       </span>
-      - {{ post.read_time }} read
+      - leitura de {{ post.read_time }}
     </div>
   </div>
 </article>
