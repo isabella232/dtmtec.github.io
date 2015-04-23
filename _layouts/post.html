@@ -35,7 +35,7 @@
           {{content}}
         </section>
 
-        {% if page.author %}
+        {% if site.authors[page.author].display_signature %}
           <div class="bottom-teaser cf">
             <div class="isLeft">
               <h5 class="index-headline featured"></h5>
@@ -57,6 +57,5 @@
 
     {% include footer.html %}
     {% include javascripts.html %}
-
   </body>
 </html>

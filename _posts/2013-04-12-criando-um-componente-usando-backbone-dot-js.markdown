@@ -3,7 +3,7 @@ layout: post
 title: "Criando um componente com Backbone.js"
 date: 2012-09-11 16:42
 comments: true
-author: Vicente Mundim
+author: vicente.mundim
 read_time: 26 min
 categories:
 - Backbone

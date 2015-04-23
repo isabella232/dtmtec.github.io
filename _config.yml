@@ -39,24 +39,39 @@ authors:
     name: Luis Vasconcellos
     twitter: http://twitter.com/vasconcelloslf
     signature: developer. vim and tmux enthusiast.
-    description: Gosto de postar sobre tal, tal, tal e tal.
+    description: |
+      Sou apaixonado por desenvolvimento e procuro escrever sempre sobre assuntos relacionados a plataforma web, cordova, rails, javascript e seus respectivos frameworks.
+    display_signature: true
   marcelo.murad:
     name: Marcelo Murad
+    twitter: http://twitter.com/marcelo_murad
   rafael.mahler:
     name: Rafael Mahler
+    twitter: http://twitter.com/rafamahler
   otavio.cardoso:
     name: Otavio Cardoso
+    twitter: http://twitter.com/realotaviko
   felipe.mesquita:
     name: Felipe Mesquita
+    twitter: http://twitter.com/fmesquitacunha
   gustavo.kloh:
     name: Gustavo Kloh
+    twitter: http://twitter.com/gustavokloh
   vicente.mundim:
     name: Vicente Mundim
+    twitter: http://twitter.com/vicente.mundim
   joao.mello:
     name: João Mello
+    twitter: http://twitter.com/jhonny_carreira
+  julian.gutierrez:
+    name: Julian Gutierrez
+    twitter: http://twitter.com/vasconcelloslf
   carlos.figueiredo:
     name: Carlos Figueiredo
+    twitter: http://twitter.com/cefigueiredo
   tomas.lima:
     name: Tomas Lima
+    twitter: http://twitter.com/vasconcelloslf
   valeria.parajara:
     name: Valéria Parajara
+    twitter: http://twitter.com/valparajara

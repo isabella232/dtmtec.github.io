@@ -3,7 +3,7 @@ layout: post
 title: "TDD - Alguns motivos para usá-lo"
 date: 2012-10-02 10:10
 comments: true
-author: Gustavo Kloh
+author: gustavo.kloh
 categories:
 - TDD
 - testes

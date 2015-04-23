@@ -3,7 +3,7 @@ layout: post
 title: "Introdução ao Backbone.js"
 date: 2012-08-28 13:30
 comments: true
-author: Felipe Mesquita
+author: felipe.mesquita
 read_time: 14 min
 categories:
 - Backbone

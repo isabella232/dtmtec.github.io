@@ -3,7 +3,7 @@ layout: post
 title: "Big Bang"
 date: 2012-08-07 10:18
 comments: true
-author: Marcelo Murad
+author: marcelo.murad
 categories:
 read_time: 1 min
 ---
