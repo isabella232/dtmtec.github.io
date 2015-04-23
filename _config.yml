@@ -3,9 +3,9 @@ highlighter: pygments
 gems:
   - jemoji
 
-title: "DTM"
+title: "Simplifying Ideas"
 description: >
-  Simplifying Ideas
+  DTM
 
 email: email@dtmtec.com.br
 logo: "/assets/images/dtm.png"

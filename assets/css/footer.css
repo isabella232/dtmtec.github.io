@@ -1,0 +1,222 @@
+footer {
+  height: 796px;
+  background: #000000 url(../images/DTM-footer.png) no-repeat center 80px fixed;
+  text-align: center;
+}
+
+.box-footer {
+  display: inline-block;
+  vertical-align: top;
+  width: 18%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.mapadtm {
+  width: 39%;
+}
+
+.box-footer i.logo {
+  color: #bbb;
+  font-size: 28px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+ul.menu-footer {
+  margin:0;
+  padding:0;
+  border:0;
+  list-style:none;
+}
+
+ul.menu-footer li {
+  font-size: 13px;
+  font-weight: lighter;
+  color: #bbb;
+  margin-bottom: 8px;
+}
+
+ul.menu-footer li a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+ul.menu-footer li a:hover {
+  color: #fff;
+}
+
+.mapa-localizacao {
+  width: 90%;
+  height: 250px;
+  background: transparent url(../images/mapa-local.jpg) no-repeat center center;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.conecte-se li {
+  display: inline-block;
+  padding: 0 3px 6px 0;
+  text-align: center;
+}
+
+.conecte-se li a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 23px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out; /* Firefox 4 */
+  -webkit-transition: background .2s ease-in-out; /* Safari and Chrome */
+  -o-transition: background .2s ease-in-out; /* Opera */
+}
+
+.conecte-se li a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 22px;
+  color: #bbb;
+  margin-bottom: 12px;
+}
+
+footer h3 a {
+  color: #666;
+}
+
+footer h3 a:hover {
+  color: #fff;
+}
+
+footer p {
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 20px;
+  color: #bbb;
+}
+
+footer p a {
+  color: #ddd;
+}
+
+footer p a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer {
+  height: 730px;
+}
+
+.box-footer {
+  display: inline-block;
+  vertical-align: top;
+  width: 18%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.mapadtm {
+  width: 38%;
+}
+
+
+footer {
+  height: auto;
+  background: #000000 url(../images/DTM-footer.png) no-repeat center 95px scroll;
+  background-size: auto 430px;
+}
+
+.box-footer {
+  display: block;
+  vertical-align: top;
+  width: 88%;
+  margin: auto;
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+
+.mapadtm {
+  width: 88%;
+}
+
+.mapa-localizacao {
+  width: 100%;
+  height: 280px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.dashboards {
+  height: 178px
+}
+
+.dashboards img {
+  width: 270px;
+}
+
+footer {
+  height: 600px;
+  background: #000000 url(../images/DTM-footer.png) no-repeat center 95px scroll;
+  background-size: auto 430px;
+}
+
+.box-footer {
+  display: block;
+  vertical-align: top;
+  width: 88%;
+  margin: auto;
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+
+.mapadtm {
+  width: 88%;
+}
+
+.mapa-localizacao {
+  width: 100%;
+  height: 280px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.box-footer {
+  display: block;
+  vertical-align: top;
+  width: 88%;
+  margin: auto;
+  padding: 40px 0 0 0;
+  text-align: left;
+}
+
+.mapadtm {
+  width: 88%;
+}
+
+.mapa-localizacao {
+  width: 100%;
+  height: 280px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}

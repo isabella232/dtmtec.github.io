@@ -34,33 +34,29 @@
           <a name="topofpage"></a>
           {{content}}
         </section>
-        <div class="bottom-teaser cf">
-          <div class="isLeft">
-            <h5 class="index-headline featured"></h5>
-            <section class="author">
-              <div class="author-image" style="background-image: url(/assets/images/authors/{{page.author}}.jpg)">Blog Logo</div>
-              <h4>{{ site.authors[page.author].name }}</h4>
-              <p class="bio">{{ site.authors[page.author].signature   }}</p>
-              <p class="bio">{{ site.authors[page.author].description }}</p>
-            </section>
+
+        {% if page.author %}
+          <div class="bottom-teaser cf">
+            <div class="isLeft">
+              <h5 class="index-headline featured"></h5>
+              <section class="author">
+                <div class="author-image" style="background-image: url(/assets/images/authors/{{page.author}}.jpg)">Blog Logo</div>
+                <h4>{{ site.authors[page.author].name }}</h4>
+                <p class="bio">{{ site.authors[page.author].signature   }}</p>
+                <p class="bio">{{ site.authors[page.author].description }}</p>
+              </section>
+            </div>
+            {{/post}}
           </div>
-          {{/post}}
-        </div>
+        {% endif %}
+
       </article>
       <div id="disqus_thread"></div>
       <br/>
     </main>
 
-    <div class="bottom-closer">
-      <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover }})"{% endif %}>
-      </div>
-      <div class="inner">
-        <h1 class="blog-title">{{ site.title }}</h1>
-        <h2 class="blog-description">{{ site.description }}</h2>
-        <a href="/" class="btn">Voltar</a>
-      </div>
-    </div>
-
+    {% include footer.html %}
     {% include javascripts.html %}
+
   </body>
 </html>
