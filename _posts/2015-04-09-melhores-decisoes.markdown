@@ -4,6 +4,7 @@ title: "O acesso a dados por si só não leva necessariamente a melhores decisõ
 date: 2015-04-09 17:26
 comments: true
 author: rafael.mahler
+read_time: 2 min
 categories:
 - bi
 - business intelligence

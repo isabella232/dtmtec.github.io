@@ -12,12 +12,12 @@ categories:
 - crm
 ---
 
-Lightning é um lançamento inovador da plataforma Salesforce1 que permite a criação de aplicativos de forma fácil e rápida por desenvolvedores e analista de negócios.
+Lightning é um lançamento inovador da plataforma Salesforce1 que permite a criação de aplicativos de forma fácil e rápida por desenvolvedores e analistas de negócios.
+
+<!-- more -->
 
 >
 No dia 12 de março de 2015, o Rio de Janeiro marcou sua participação no evento Lightning Developer Week da Salesforce.
-
-<!-- more -->
 
 Para tornar a novidade acessível a todos, a Salesforce promoveu uma semana de meetups ao redor do mundo a partir do dia 09 de março. Foi o evento *Lightning Developer Week*. Foram demonstrações, treinamentos e muito bate papo em mais de 100 cidades do globo, sobre o framework e as ferramentas Lightning.
 
