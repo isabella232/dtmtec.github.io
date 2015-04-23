@@ -37,7 +37,9 @@ social:
 authors:
   luis.vasconcellos:
     name: Luis Vasconcellos
+    github: http://github.com/vasconcelloslf
     twitter: http://twitter.com/vasconcelloslf
+    linkedin: https://www.linkedin.com/profile/view?id=108062830
     signature: developer. vim and tmux enthusiast.
     description: |
       Sou apaixonado por desenvolvimento e procuro escrever sempre sobre assuntos relacionados a plataforma web, cordova, rails, javascript e seus respectivos frameworks.
