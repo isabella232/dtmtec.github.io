@@ -1,36 +1,24 @@
+url: "http://simplifyingideas.com.br"
+logo: "/assets/images/dtm.png"
+title: "Simplifying Ideas"
+email: email@dtmtec.com.br
+cover: "/assets/images/cover.jpg"
+
 markdown: redcarpet
 highlighter: pygments
 
-title: "Simplifying Ideas"
-
-email: email@dtmtec.com.br
-logo: "/assets/images/dtm.png"
-cover: "/assets/images/cover.jpg"
-
 paginate:	50
-
-name: 'DTM'
-author: 'DTM'
-author_image: "/assets/images/luis.jpg"
-
-url: "http://simplifyingideas.com.br"
-baseurl: ""
 
 social:
   - icon:	twitter
     url:	https://twitter.com/DTMtec
-    desc: Follow me
     share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
 
   - icon:	github
     url:	https://github.com/DTMtec
-    desc:	Fork me
 
   - icon:	facebook
     url:	https://facebook.com/DTMtec
-    desc:	Fork me
 
 authors:
   luis.vasconcellos:
