@@ -3,6 +3,7 @@ layout: post
 title: "Visão geral sobre REST"
 date: 2012-11-07 22:53
 comments: true
+tags: featured
 author: otavio.cardoso
 read_time: 2 min
 categories:
