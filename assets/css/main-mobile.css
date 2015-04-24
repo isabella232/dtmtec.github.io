@@ -1,0 +1,36 @@
+@media only screen and (min-width: 200px) and (max-width: 630px) {
+  .post .bottom-teaser .isLeft {
+    padding-bottom: 0px;
+  }
+
+  .post .bottom-teaser .isLeft section.author {
+    text-align: center;
+  }
+
+  .post .bottom-teaser .isLeft section.author h4 {
+    float: none !important;
+    margin: 10px 0;
+
+  }
+
+  .post .bottom-teaser .isLeft section.author p {
+    padding-left: 0;
+  }
+
+  .post .bottom-teaser .isLeft section.author p.description {
+    text-align: justify;
+  }
+
+  .post .bottom-teaser .isLeft section.author p.signature {
+    margin-top: 10px;
+  }
+
+  .post .bottom-teaser .isLeft section.author .social {
+    margin-bottom: 10px;
+  }
+
+  .post .bottom-teaser .isLeft section.author .author-image {
+    float: none !important;
+    margin: 0 auto
+  }
+}
