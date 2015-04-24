@@ -1,7 +1,5 @@
 markdown: redcarpet
 highlighter: pygments
-gems:
-  - jemoji
 
 title: "Simplifying Ideas"
 
