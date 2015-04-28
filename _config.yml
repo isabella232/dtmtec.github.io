@@ -35,7 +35,13 @@ authors:
     twitter: http://twitter.com/marcelo_murad
   rafael.mahler:
     name: Rafael Mahler
+    signature: UI / UX Designer at DTM Tecnologia da Informação
+    description: |
+      Meu principal foco de atuação é a criação de projetos com interfaces intuitivas, fáceis e agradáveis de utilizar. Transito bem entre publicidade, marketing e entretenimento, pesquisando continuamente e filtrando tendências para aplicação no dia a dia dos nossos clientes.
     twitter: http://twitter.com/rafamahler
+    github: http://github.com/rafaelmahler
+    linkedin: https://br.linkedin.com/pub/rafael-mahler/15/444/a82
+    display_signature: true
   otavio.cardoso:
     name: Otavio Cardoso
     twitter: http://twitter.com/realotaviko

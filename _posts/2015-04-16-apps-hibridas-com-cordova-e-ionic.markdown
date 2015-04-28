@@ -8,7 +8,6 @@ categories:
 - ionic
 - cordova
 - mobile apps
-tags: featured
 author: luis.vasconcellos
 ---
 
