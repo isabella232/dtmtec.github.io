@@ -1,4 +1,7 @@
-<div class="teaserimage"></div>
+<div class="teaserimage">
+  <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
+  </div>
+</div>
 
 <header class="blog-header">
   {% if site.logo %}
