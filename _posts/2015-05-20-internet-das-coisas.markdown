@@ -58,8 +58,8 @@ A tecnologia wireless é, de certa forma, um requisito para a IOT. Porem nada es
 
 A empresa desenvolve um dispositivo com sensor GPS incorporado capaz de enviar dados para um smartphone. O produto tem utilidades diversas, já que possui sensores de temperatura, movimento e alerta de áudio. Assim fica fácil encontrar um pet perdido, um carro estacionado no shopping, uma chave em casa sob uma almofada, saber quando uma porta em casa foi aberta, etc.
 
-##Eletric Imp
-[eletricimp.com](http://eletricimp.com)
+##Electric Imp
+[electricimp.com](http://electricimp.com)
 
 Eletric Imp é uma plataforma de serviços com software integrado, APIs, servidor de nuvem, sistema operacional e hardware, que facilita a conexão de dispositivos à internet. A plataforma pode ser utilizada para uma ampla variedade de funções, como por exemplo acionar os irrigadores do jardim de acordo com padrões climáticos, ligar o aquecedor remotamente quando se está a caminho de casa, etc.
 
