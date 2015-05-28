@@ -61,7 +61,7 @@ A empresa desenvolve um dispositivo com sensor GPS incorporado capaz de enviar d
 ##Electric Imp
 [electricimp.com](http://electricimp.com)
 
-Eletric Imp é uma plataforma de serviços com software integrado, APIs, servidor de nuvem, sistema operacional e hardware, que facilita a conexão de dispositivos à internet. A plataforma pode ser utilizada para uma ampla variedade de funções, como por exemplo acionar os irrigadores do jardim de acordo com padrões climáticos, ligar o aquecedor remotamente quando se está a caminho de casa, etc.
+Electric Imp é uma plataforma de serviços com software integrado, APIs, servidor de nuvem, sistema operacional e hardware, que facilita a conexão de dispositivos à internet. A plataforma pode ser utilizada para uma ampla variedade de funções, como por exemplo acionar os irrigadores do jardim de acordo com padrões climáticos, ligar o aquecedor remotamente quando se está a caminho de casa, etc.
 
 ##iPontual
 [www.ipontual.com.br](http://www.ipontual.com.br)
