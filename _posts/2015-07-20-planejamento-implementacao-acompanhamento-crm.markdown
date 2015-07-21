@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Planejamento, implementação e acompanhamento em CRM"
+title: "Conceito e estratégia de CRM"
 date: 2015-07-20 15:20:00 +0000
 comments: true
 read_time: 5 min
@@ -14,8 +14,6 @@ author: rafael.mahler
 CRM (Customer Relationship Management) é aumentar as oportunidades, melhorando o processo de comunicação com o cliente certo, fornecendo a oferta correta, por meio do canal certo e na hora certa.
 
 <!-- more -->
-
-##Conceito e estratégia de CRM
 
 Fundamentado no marketing de relacionamento e na infra-estrutura da tecnologia de informação, o CRM representa a solução para viabilizar uma vantagem competitiva sustentável.
 
@@ -84,4 +82,4 @@ Para que as organizações adotem o CRM de maneira eficaz, propoõe-se o modelo 
 * Definição das métricas de controle
 * Controle e adaptação
 
-O Volume e a qualidade das informções são essenciais para o sucesso do CRM. Desta forma, a tecnologia representa um aspecto vital nesse contexto. As empresas necessitam possuir capacidade tecnológica para coletar, armazenar, analizar e compartilhar informações, aprimorando suas habilidades para responder às necessidades individuais dos consumidores. Desta forma, atrair e reter o publico-alvo serão consequências.
+O Volume e a qualidade das informações são essenciais para o sucesso do CRM. Desta forma, a tecnologia representa um aspecto vital nesse contexto. As empresas necessitam possuir capacidade tecnológica para coletar, armazenar, analizar e compartilhar informações, aprimorando suas habilidades para responder às necessidades individuais dos consumidores. Desta forma, atrair e reter o publico-alvo serão consequências.
