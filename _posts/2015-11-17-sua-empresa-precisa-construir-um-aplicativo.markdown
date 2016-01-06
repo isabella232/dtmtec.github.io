@@ -27,4 +27,4 @@ A vantagem dessa velocidade não é apenas estar a frente da concorrência. É q
 
 Com o AppCloud podemos nos concentrar na criação de aplicativos incríveis, ao invés de perdermos tempo com criação e gestão de banco de dados, deployment, escalabilidade e configuração.
 
-A tecnologia está se movendo cada vez mais rápido. E a DTM segue acompanhando as mudanças mais impactantes, ansiosos para transformar negócios e compartilhar um futuro inovador com você.
+A tecnologia está se movendo cada vez mais rápido, e a DTM segue acompanhando as mudanças mais impactantes. Estamos ansiosos para transformar negócios e compartilhar um futuro inovador com você.
